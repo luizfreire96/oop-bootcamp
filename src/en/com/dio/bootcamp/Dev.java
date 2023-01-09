@@ -103,4 +103,12 @@ public class Dev {
         return true;
     }
 
+    public int getXp() {
+        return xp;
+    }
+
+    public void setXp(int xp) {
+        this.xp = xp;
+    }
+
 }

@@ -1,5 +1,4 @@
 import en.com.dio.bootcamp.Bootcamp;
-import en.com.dio.bootcamp.Content;
 import en.com.dio.bootcamp.Course;
 import en.com.dio.bootcamp.Dev;
 import en.com.dio.bootcamp.Mentoring;
@@ -7,17 +6,18 @@ import en.com.dio.bootcamp.Mentoring;
 public class App {
     public static void main(String[] args) throws Exception {
         
-        Content mentoring1 = new Mentoring();
+        Mentoring mentoring1 = new Mentoring();
         mentoring1.setName("Career Mentoring");
         mentoring1.setDescription("miau miau");
 
-        Content mentoring2 = new Mentoring();
+        Mentoring mentoring2 = new Mentoring();
         mentoring2.setName("Techinical Mentoring");
         mentoring2.setDescription("miau miau");
 
-        Content course1 = new Course();
+        Course course1 = new Course();
         course1.setName("Java Course");
         course1.setDescription("miau miau");
+        course1.setHours(5);
 
 
         Bootcamp bootcampJava = new Bootcamp();
@@ -53,5 +53,9 @@ public class App {
         System.out.println(" ************************ \n João \n  " + joao.getConcludedContents() +
         "\n ************************\n Maria \n" + maria.getConcludedContents());
         */
+        System.out.println(" ************************ \n João \n  " + joao.getXp() +
+        "\n ************************\n Maria \n  " + maria.getXp());
+
+
     }
 }

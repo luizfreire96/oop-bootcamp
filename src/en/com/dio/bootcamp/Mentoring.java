@@ -10,7 +10,7 @@ public class Mentoring extends Content {
     }
 
     @Override
-    public double determineXp() {
+    public int determineXp() {
         return BASE_XP + 20;
     }
 
