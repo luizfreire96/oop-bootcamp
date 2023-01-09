@@ -1,18 +1,25 @@
-## Getting Started
+## OOP Bootcamp Abstraction
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This is a study purpose project with an abstraction of a back end bootcamp using Object Oriented Programming.
 
-## Folder Structure
+## Classes
 
-The workspace contains two folders by default, where:
+### Bootcamp
+Content containing the start and end date, developers enrolled and the content in the bootcamp.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### Dev
+The developers containing their names, enrolled content, concluded content and total XP.
+#### Methods
+- enrollBootcamp: Enroll the developer in a bootcamp.
+- progressContent: Conclude the next content in bootcamp.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### Content
+An abstract class to generate Course and Mentoring classes.
+#### Methods: 
+- determineXp: Calculate the gained xp for those who conclude.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+### Course
+A course containing description, name and hours.
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+### Mentoring
+A mentoring containing desciption, name and date.
